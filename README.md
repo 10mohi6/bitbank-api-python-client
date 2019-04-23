@@ -17,7 +17,7 @@ bitbank-client is a python client (sync/async) library for bitbank api
 #
 from bitbank_client.sync import Client
 
-client = Clinet(public_key='your api key', private_key='your api secret')
+client = Client(public_key='your api key', private_key='your api secret')
 response = client.get_ticker(pair='btc_jpy')
 print(response.status_code, response.json())
 
